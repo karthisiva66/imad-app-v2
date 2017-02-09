@@ -99,7 +99,7 @@ app.get('/:articleName', function (req, res) {
     //articleName == article-one
     //articles[articleName] == {} content object for article one
     var articleName = req.params.articleName;
-    res.send(createTemplate(articles));
+    res.send(createTemplate(articles[articlenName]));
 });
 
 app.get('/ui/style.css', function (req, res) {
